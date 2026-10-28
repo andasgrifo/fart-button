@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; media-src 'self' https://fartsoundboard.com https://cdn.freesound.org https://bigsoundbank.com; script-src 'self'" />
+    <title>The Fart Button</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="gas-cloud gas-cloud--one" aria-hidden="true"></div>
+    <div class="gas-cloud gas-cloud--two" aria-hidden="true"></div>
+
+    <header>
+      <a class="brand" href="#" aria-label="Gas Labs home">
+        <span class="brand-mark">GL</span>
+        <span>GAS LABS<small>Est. 2026</small></span>
+      </a>
+      <div class="status"><i></i> System armed</div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <p class="eyebrow">Advanced acoustic flatulence</p>
+        <h1 id="title">THE FART<br /><em>BUTTON</em></h1>
+        <p class="subhead">One button. Zero dignity.<br />Infinite possibilities.</p>
+      </section>
+
+      <section class="machine" aria-label="Fart machine">
+        <div class="caution caution--top">CAUTION &nbsp;•&nbsp; PRESSURE ZONE &nbsp;•&nbsp; CAUTION &nbsp;•&nbsp; PRESSURE ZONE</div>
+        <div class="panel">
+          <div class="screw screw--tl"></div><div class="screw screw--tr"></div>
+          <div class="screw screw--bl"></div><div class="screw screw--br"></div>
+          <div class="panel-label"><span>MANUAL GAS RELEASE</span><b id="pressure">PRESSURE: READY</b></div>
+
+          <div class="button-well">
+            <button id="fart-button" type="button" aria-describedby="hint">
+              <span class="button-shine"></span>
+              <span class="button-copy">FART</span>
+              <span class="button-subcopy">PUSH TO RELEASE</span>
+            </button>
+          </div>
+
+          <div class="meter" aria-hidden="true">
+            <span>LOW</span><i><b id="meter-fill"></b></i><span>OH NO</span>
+          </div>
+          <p id="hint" class="hint">CLICK BUTTON OR PRESS <kbd>SPACE</kbd></p>
+        </div>
+        <div class="caution caution--bottom">BIOHAZARD &nbsp;•&nbsp; STAND CLEAR &nbsp;•&nbsp; BIOHAZARD &nbsp;•&nbsp; STAND CLEAR</div>
+      </section>
+    </main>
+
+    <footer>
+      <p><span id="count">000</span> successful emissions</p>
+      <p id="verdict">Air quality: suspiciously normal</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">TOOT DEPLOYED</div>
+    <div id="particles" aria-hidden="true"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

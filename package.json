@@ -1,0 +1,14 @@
+{
+  "name": "fart-button",
+  "version": "1.0.0",
+  "description": "The world's most over-engineered fart button",
+  "main": "main.js",
+  "scripts": { "start": "electron .", "pack": "electron-builder --win portable" },
+  "devDependencies": { "electron": "^39.0.0", "electron-builder": "^26.0.0" },
+  "build": {
+    "appId": "fun.gaslabs.fartbutton",
+    "productName": "The Fart Button",
+    "files": ["main.js", "preload.js", "renderer/**", "package.json"],
+    "win": { "target": "portable" }
+  }
+}
